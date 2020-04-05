@@ -1,4 +1,4 @@
-package cs175LabNewGITLINK1;
+package cs175LabNew;
 
 import java.util.Scanner;
 
@@ -6,7 +6,7 @@ public class GPACode {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		
 		//grades and their values 
 		//A = 4.00
