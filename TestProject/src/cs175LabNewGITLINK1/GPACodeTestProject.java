@@ -1,4 +1,4 @@
-package cs175LabNewGITLINK;
+package cs175LabNewGITLINK1;
 
 import java.util.Scanner;
 
