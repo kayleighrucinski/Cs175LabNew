@@ -2,7 +2,7 @@ package cs175LabNewGITLINK1;
 
 import java.util.Scanner;
 
-public class GPACodeTestProject {
+public class GPACode {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -179,3 +179,4 @@ Scanner sc = new Scanner(System.in);
 			
 		} //class
 	} //void 
+
