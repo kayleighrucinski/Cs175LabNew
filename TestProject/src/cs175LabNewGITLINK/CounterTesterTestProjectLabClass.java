@@ -4,167 +4,225 @@ public class CounterTesterTestProjectLabClass {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//creates a counter
 
-		Counter ct = new Counter();
 
-		
+//start
+				//creates a counter called venue
 
-		//clicks 10 times
+				Counter venue = new Counter();
 
-		for(int i=1;i<=10;i++) 
-		{
+				
 
-			ct.click();
+				//clicks 10 times
 
+				for(int i=1;i<=10;i++) 
+				{
+
+					venue.click();
+
+				}
+
+				
+
+				//unclicks 5 times
+
+				for(int i=1;i<=5;i++) 
+				{
+
+					venue.unclick();
+
+				}
+
+				
+
+				//prints expected counter value (5)
+
+				System.out.println("Expected: 5");
+
+				
+
+				//prints actual counter value
+
+				int actualValue = venue.getValue();
+
+				System.out.println("Actual: " + actualValue);
+
+				
+
+				//reset counter
+
+				venue.reset();
+
+				
+
+				//click 3 times
+
+				for(int i=1;i<=3;i++) {
+
+					venue.click();
+
+				}
+
+				
+
+				//unclick 4 times
+
+				for(int i=1;i<=4;i++) {
+
+					venue.unclick();
+
+				}
+
+				
+
+				//prints expected counter value (-1)
+
+				System.out.println("Expected: -1");
+
+				
+
+				//prints actual counter value
+
+				actualValue = venue.getValue();
+
+				System.out.println("Actual: " + actualValue);
+			}
 		}
+//finish
+//start
 
+		class Counter {
+
+		    private int value;
+
+
+		     //Gets the current value of this counter.
+
+		    public int getValue()
+
+		    {
+
+		        return value;
+
+		    }
+
+		     // add 1
+
+
+		    public void click()
+
+		    {
+
+		        value = value + 1;
+
+		    }
+
+		    //subtract 1
+		    
+		    public void unclick()
+
+		    {
+
+		        value = value -1;
+
+		    }
+		    
+		    // Resets the value to 0.
+		    
+		    public void reset()
+
+		    {
+
+		        value = 0;
+		        
+		    //adding ten
+		    }
+
+		    public void clickMany()
+		    {
+		    	value = value + 10;
+		    }
+		    
+		    //subtracting ten 
+		    public void unclickMany()
+		    {
+		    	value = value - 10;
+		    }
+		    //finish
+		    
+		    
+				  //start
+		    public static void main(String[] args) {
+					//creates a counter called anotherVenue
 		
-
-		//unclicks 5 times
-
-		for(int i=1;i<=5;i++) {
-
-			ct.unclick();
-
-		}
-
+					Counter anotherVenue = new Counter();
 		
-
-		//prints expected counter value (5)
-
-		System.out.println("Expected: 5");
-
+					//clicks 10 times
 		
-
-		//prints actual counter value
-
-		int actualValue = ct.getValue();
-
-		System.out.println("Actual: " + actualValue);
-
+					for(int a=1;a<=10;a++) 
+					{
 		
-
-		//reset counter
-
-		ct.reset();
-
+						anotherVenue.clickMany();
 		
-
-		//click 3 times
-
-		for(int i=1;i<=3;i++) 
-		{
-
-			ct.click();
-
-		}
-
+					}
+					//unclicks 5 times
 		
-
-		//unclick 4 times
-
-		for(int i=1;i<=4;i++) 
-		{
-
-			ct.unclick();
-
-		}
-
+					for(int a=1;a<=5;a++) 
+					{
 		
-
-		//prints expected counter value (-1)
-
-		System.out.println("Expected: -1");
-
+						anotherVenue.unclickMany();
 		
-
-		//prints actual counter value
-
-		actualValue = ct.getValue();
-
-		System.out.println("Actual: " + actualValue);
-
-
-
+					}
 		
-
-	}
-
+					
+		
+					//prints expected counter value (5)
+		
+					System.out.println("Expected: 5");
+		
+					
+		
+					//prints actual counter value
+		
+					int actualValue = anotherVenue.getValue();
+		
+					System.out.println("Actual: " + actualValue);
+		
+					
+		
+					//reset counter
+		
+					anotherVenue.reset();
+		
+					
+		
+					//click 3 times
+		
+					for(int a=1;a<=3;a++) 
+					{
+		
+						anotherVenue.clickMany();
+		
+					}
+					//unclick 4 times
+		
+					for(int a=1;a<=4;a++) 
+					{
+		
+						anotherVenue.unclickMany();
+		
+					}
 	
-
-}
-
-
-
-class Counter {
-
-    private int value;
-
-
-
-    /**
-
-     Gets the current value of this counter.
-
-    @return the current value
-
-    */
-
-    public int getValue()
-
-    {
-
-        return value;
-
-    }
-
-
-
-    /**
-
-     Advances the value of this counter by 1.
-
-    */
-
-    public void click()
-
-    {
-
-        value = value + 1;
-
-    }
-
-    /**
-
-     Decreases the value of this counter by 1.
-
-    */
-
-
-
-    public void unclick()
-
-    {
-
-        value = value -1;
-
-    }
-
-
-
-    /**
-
-     Resets the value of this counter to 0.
-
-    */
-
-    public void reset()
-
-    {
-
-        value = 0;
-
-
-	} //void 
+					//prints expected counter value (-1)
+		
+					System.out.println("Expected: -1");
+		
+					//prints actual counter value
+		
+					actualValue = anotherVenue.getValue();
+		
+					System.out.println("Actual: " + actualValue);
+				}
+		//finish
+			    	 						
 } //class 
